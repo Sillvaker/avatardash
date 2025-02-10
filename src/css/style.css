@@ -1,0 +1,152 @@
+/* Estilos globais */
+@media (min-width: 768px) {}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #1b1e23, #22262d);
+  /* Cor de fundo escura */
+  color: #f29500;
+  /* Cor do texto branca */
+}
+
+p {
+  color: aliceblue;
+}
+
+
+/* Cabeçalho */
+header {
+  padding-top: 10px;
+  background-image: linear-gradient(to left, #222, #333);
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  position: relative;
+  left: 40%;
+  bottom: 70px;
+}
+
+.lin {
+  position: relative;
+  bottom: 10px;
+}
+
+/* Seção principal */
+
+.title-main {
+  text-align: center;
+  padding-top: 100px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  grid-row-start: auto;
+}
+
+.bloco {
+  background-image: linear-gradient(to left, #222, #333);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.description h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.description p {
+  text-align: center;
+}
+
+/* Seção de clientes */
+.clientes {
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloco ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+
+.bloco p {
+  padding-left: 10px;
+}
+
+/* Estilo para os logos dos clientes (ajuste conforme necessário) */
+.clientes img {
+  width: 40px;
+  height: auto;
+  border-radius: 40px;
+}
+
+.funcionalidades {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 60px;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+
+.funcionalidades ul {
+  background-image: linear-gradient(to left, #222, #333);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.funcionalidades ul:hover {
+  box-shadow: 2px 5px 10px #56637a;
+}
+
+.oferta {
+  background-image: linear-gradient(to left, #222, #333);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 40px;
+}
+
+.oferta .title h1 {
+  font-size: x-large;
+}
+
+.oferta ul {
+  width: 80%;
+  background-color: #333;
+  border-radius: 40px;
+}
+
+.oferta ul h1 {
+  margin-left: 30%;
+  font-size: x-large;
+}
+
+.test p {
+  text-align: start;
+  padding-right: 30px;
+}
+
+.hr-footer {
+  padding: 0;
+  margin: 0;
+}

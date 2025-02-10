@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Avatar Bot</title>
+    <link rel="icon" href="./src/img/members/ad5b28f7cebdb93eae8b9b0c76c6a91f.png">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Avatar Bot</h1>
+        <nav><button id="login-button">sing in</button></nav>
+    </header>
+
+
+
+    <main>
+        <h1 class="title-main">Servidores Parceiros</h1>
+        <div class="clientes">
+            <div class="bloco">
+                <ul>
+                    <img src="./src/img/server/one seven.gif" alt="one seven">
+                    <p>One Seven</p>
+                </ul>
+                <ul>
+                    <img src="./src/img/server/thelux natal.gif" alt="the lux">
+                    <p>The Lux Natal</p>
+                </ul>
+                <ul>
+                    <img src="./src/img/server/webamor_gif.gif" alt="web amor">
+                    <p>Web Amor</p>
+                </ul>
+                <ul>
+                    <img src="./src/img/server/yhx.gif" alt="the lux">
+                    <p>The Lux</p>
+                </ul>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Um bot completo para seu servidor</h1>
+            <p>Equipe o bot com diversas funcionalidades que tem em varios bot pagos de graça</p>
+        </div>
+
+        <div class="funcionalidades">
+            <ul>
+                <div class="antiraid">
+                    <h2>Anti Raid</h2>
+                    <p>Mantenha sua comunidade protegida contra ataques</p>
+
+                </div>
+            </ul>
+            <ul>
+                <div class="moderação">
+                    <h2>Moderação</h2>
+                    <p>Mantenha sua comunidade organizada com os recursos de moderação</p>
+                </div>
+            </ul>
+            <ul>
+                <div class="economia">
+                    <h2>Economia</h2>
+                    <p>você encontra diversos jogos, e sistema de economia</p>
+                </div>
+            </ul>
+            <ul>
+                <div class="staff">
+                    <h2>Moderação de Staff</h2>
+                    <p>Mantenha sua Equipe organizada com os recursos de moderação staff</p>
+
+                </div>
+            </ul>
+            <ul>
+                <div class="tempocall">
+                    <h2>Tempo em Call</h2>
+                    <p>Conte quanto tempo que os membros ficam em canais de voz na sua comunidade!</p>
+
+                </div>
+            </ul>
+            <ul>
+                <div class="sistemavip">
+                    <h2>Sistema de Vips</h2>
+                    <p>Crie vips personalizados, onde os membros poderão ter benefícios exclusivos!</p>
+
+                </div>
+            </ul>
+        </div>
+
+        <div class="oferta">
+
+            <div class="title">
+                <h1>Economize seu dinheiro</h1>
+                <p>Tenha acesso a um jogo de economia mais completo do discord, com possibilidades de
+                    personalização
+                    de avatar e ainda mais com o sistema de bolsa de valores com investimentos e quedas da
+                    bolsa!
+                </p>
+
+            </div>
+
+            <ul class="descripion-oferta">
+                <div class="">
+                    <h1>Diferencial</h1>
+                    <li>
+                        <p>Desenvolvido com base na opinião da comunidade</p>
+                    </li>
+                    <li>
+                        <p>Opções de personalização detalhadas</p>
+                    </li>
+                    <li>
+                        <p>Painel de controle intuitivo</p>
+                    </li>
+                    <li>
+                        <p>Recursos gratuitos</p>
+                    </li>
+                    <li>
+                        <p>99.99% uptime</p>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <div class="test">
+                    <h1>Sobre Mim</h1>
+                    <p>sou um bot focado em ajudar as comunidades mais humilde do discord, e fui desenvolvido pensando em trazer tudo aquilo que os bots pagos
+                    possuem.
+                    </p>
+                    <p>também estou trazendo uma novidade já mais vistas no discord, com minha mega produção e desenvolvimento está chegando um sistema de economia unico.</p>
+                </div>
+            </ul>
+
+        </div>
+
+    </main>
+
+    <script>
+        const elements = document.querySelectorAll('.oferta');
+
+        window.addEventListener('scroll', () => {
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    element.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+    <hr class="hr-footer">
+
+    <script>
+        const loginButton = document.getElementById('login-button');
+
+        loginButton.addEventListener('click', () => {
+            const clientId = '901275091910922260'; // Substitua pelo seu ID de cliente do Discord
+            const redirectUri = 'http://localhost:3000/callback'; // URL de redirecionamento
+            const scopes = ['identify', 'guilds']; // Escopos de permissão (neste caso, apenas identificar o usuário)
+
+            const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scopes.join(' ')}`;
+            window.location.href = authUrl;
+        });
+    </script>
+
+
+</body>
+
+</html>
